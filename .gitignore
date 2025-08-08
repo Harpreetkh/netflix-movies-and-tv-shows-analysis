@@ -9,3 +9,18 @@ node_modules/
 cloudinary_python.txt
 kaggle.json
 .venv/
+# Ignore virtual environment folder
+venv/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore datasets (optional – only if you don’t want to track CSVs)
+*.csv
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system/log files
+*.log
+*.DS_Store
