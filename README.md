@@ -1,72 +1,77 @@
+# Project Netflix Content Analysis
+
+**Project Netflix Content Analysis** is a comprehensive data analysis project focused on exploring the content available on Netflix from 2008 to 2021. Using a Kaggle dataset containing metadata on films and TV shows available on Netflix, this project investigates trends in content distribution by country, content types, release years, and other attributes. The analysis includes data extraction, transformation, exploratory data analysis (EDA), and visualisation to provide actionable insights about Netflix's content catalogue.
+
+
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-## Template Instructions
+## Dataset Content  
+The dataset is sourced from [Kaggle: Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows) and contains detailed metadata on titles added to Netflix between **2008 and 2021**. The original release years of titles vary widely, often predating their Netflix addition.
 
-Welcome,
+Key columns include:  
+- `show_id`: Unique identifier for each title  
+- `type`: Content type (Film or TV Show)  
+- `title`: Title of the work  
+- `director`: Director(s)  
+- `cast`: Leading actors  
+- `country`: Country or countries of production  
+- `date_added`: Date added to Netflix (2008–2021)  
+- `release_year`: Original release year  
+- `rating`: Viewer rating (e.g., PG, 15)  
+- `duration`: Duration in minutes or number of seasons  
+- `listed_in`: Genres or categories  
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+---
+## Business Requirements  
+1. Analyse the distribution of Netflix content by country and identify top producing countries.  
+2. Compare the proportions of Films versus TV Shows on Netflix.  
+3. Explore temporal trends in content additions and release years.  
+4. Examine genre and rating distributions to understand audience targeting.  
+5. Create impactful visualisations using Python and prepare for Power BI dashboard development.  
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+## Hypotheses and How I Tested Them
 
-## How to use this repo
+### Hypothesis 1: Content Added Over Time  
+*I believed the amount of new content added to Netflix changes over time, showing clear patterns by month and year.*  
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+**How I checked this:**  
+I looked at the dates when shows and movies were added, counted how many were added each month and year, then created line charts to spot trends — like seasonal peaks or steady growth over the years.
 
-1. Copy the URL of your repository to your clipboard.
+---
 
-1. In VS Code, select **File** -> **Open Folder**.
+### Hypothesis 2: Growth of Movies Compared to TV Shows  
+*I thought movies and TV shows have been added to Netflix at different rates over the years.*  
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+**How I checked this:**  
+I separated the content into movies and TV shows, counted how many of each were added each year, and then compared their growth using line graphs. This helped me see which type grew faster.
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
+---
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+### Hypothesis 3: Countries Contributing Most Content  
+*I expected that certain countries produce much more content on Netflix than others.*  
 
-1. In VS Code, select **File** > **Open Folder** again.
+**How I checked this:**  
+I counted how many shows and movies come from each country, then created interactive charts and maps to highlight the top contributing countries.
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+---
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+### Hypothesis 4: Most Popular Genres on Netflix  
+*I believed some genres are much more common in the Netflix library than others.*  
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+**How I checked this:**  
+I grouped shows and movies by genre, counted how many titles belong to each genre, and visualised the most popular genres with bar charts to see which ones dominate.
 
-1. Choose **Venv** from the dropdown list.
+## Project Plan
+*(To be updated once Power BI visualisation work is complete)*
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+## Tools and Libraries
+- Python (Pandas, Matplotlib, Seaborn, Plotly)
+- Jupyter Notebook
+- Power BI *(to be added)*
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+## Credits
+- Dataset: [Netflix Shows on Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows/data)
+- Analysis guided by Code Institute learning materials
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
-
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
-
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
-
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
-
- ```console
- pip3 install -r requirements.txt
- ```
-
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
-
-1. Click the **kernel** button and choose **Python Environments**.
-
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
-
-```console
-! python --version
-```
-
-## Deployment Reminders
-
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+## Acknowledgements
+Thanks to those who supported me during this project.
