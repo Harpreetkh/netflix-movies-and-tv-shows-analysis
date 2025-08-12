@@ -53,7 +53,15 @@ This project explored four ideas (hypotheses) about Netflix’s content, which w
 **Method:** Titles were grouped by genre, and the number in each category was counted. A bar chart was used to highlight the most frequently occurring genres.
 
 ## Project Plan
-*(To be updated once Power BI visualisation work is complete)*
+This project followed a structured approach to analyse Netflix’s content data:
+
+1. **Data Collection:** Downloaded the Netflix dataset from Kaggle.  
+2. **Data Cleaning:** Removed missing values, split multiple genres into individual entries, and formatted dates.  
+3. **Exploratory Data Analysis:** Investigated trends over time, compared movies vs TV shows, identified top countries and genres.  
+4. **Hypothesis Testing:** Tested assumptions about content growth, popular genres, and country contributions.  
+5. **Data Visualisation:** Created interactive visualisations using Python libraries (Seaborn, Plotly) and Power BI for an engaging dashboard.  
+6. **Summary and Insights:** Highlighted key findings and trends from the data.  
+7. **Documentation:** Developed this README and Jupyter Notebook to explain methods and results clearly.
 
 ## Analysis technique used
 The following techniques were applied to explore and understand the Netflix dataset:
@@ -72,12 +80,33 @@ The following techniques were applied to explore and understand the Netflix data
 - **Data Accuracy and Bias** – The dataset may not represent all Netflix content globally. Certain countries, genres, or time periods may be underrepresented due to collection limitations, which could introduce bias in the findings.
 - **Responsible Interpretation** – Insights from this analysis are based only on the provided dataset. No assumptions are made about Netflix’s internal business decisions, viewership behaviour, or user demographics.
 
+
 ## Dashboard design
+
+The dashboard is designed to be clear, interactive, and visually aligned with Netflix’s brand. It uses Netflix’s signature black and red colour scheme with gradients for an engaging background. Visualisations are arranged to guide the user through the data story logically:
+
+- Trend lines at the top showing content added over time.  
+- Side-by-side comparison of movies and TV shows growth.  
+- Interactive bar charts highlighting top countries and popular genres.  
+- Filters and slicers for months, years, countries, and genres to let users explore specific views.  
+- A summary insights section at the bottom to highlight key takeaways.
+
+This structure ensures the dashboard is accessible for both data enthusiasts and casual viewers.
 
 ## Tools and Libraries
 - Python (Pandas, Matplotlib, Seaborn, Plotly)
 - Jupyter Notebook
-- Power BI *(to be added)*
+- Power BI
+
+## Reflections
+
+This project provided valuable hands-on experience in data cleaning, analysis, and visualisation using Python and Power BI. Throughout the process, several challenges were encountered that helped deepen understanding and problem-solving skills.
+
+- One major difficulty was working with the genre data, where many entries contained multiple genres in a single cell. Splitting this data to analyse each genre separately caused a dramatic increase in rows, which required finding ways to limit the data size to improve performance—such as filtering to the first 5,000 rows. Balancing data completeness with usability was a key learning point.
+- Handling missing or inconsistent dates in the dataset also took considerable effort, especially when extracting month and year information for trend analyses. Ensuring the data was clean and consistent was essential for accurate visualisations.
+- Using Power BI was a new experience, and there was a steep learning curve, particularly with interactive features like slicers and filters. For example, it was initially unclear how to add slicers that allowed users to filter by ranges or select multiple categories easily. - Figuring out how to customise the dashboard’s appearance to match Netflix’s brand colours, including creating gradient backgrounds, was also a trial-and-error process.
+- Another challenge was designing an intuitive layout that balanced multiple charts without overwhelming the viewer. Deciding what to include, how to label axes clearly, and how to title charts so they communicate key messages effectively took several iterations.
+- Despite these challenges, the project enhanced skills in data preparation, visual storytelling, and interactive dashboard design. It highlighted the importance of patience and persistence when working with real-world messy data and unfamiliar tools, and provided confidence in delivering insights for both technical and non-technical audiences.
 
 ## Credits
 - Dataset: [Netflix Shows on Kaggle](https://www.kaggle.com/datasets/shivamb/netflix-shows/data)
