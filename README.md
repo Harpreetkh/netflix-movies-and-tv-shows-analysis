@@ -88,6 +88,11 @@ The dashboard is designed to be clear, interactive, and visually aligned with Ne
 - Filters and slicers for months, years, countries, and genres to let users explore specific views.  
 - A summary insights section at the bottom to highlight key takeaways.
 
+## Note on Power BI Dashboard Access
+
+Due to limitations with the free version of Power BI, it was not possible to directly link or embed the live Power BI dashboard in this README file or the project repository.
+However, the completed Power BI file has been saved and included in the project’s **`data`** folder within the Jupyter Notebook environment. You can open and explore the dashboard locally using Power BI Desktop.
+If you have any questions or need assistance accessing the dashboard, please feel free to get in touch.
 This structure ensures the dashboard is accessible for both data enthusiasts and casual viewers.
 
 ## Tools and Libraries
