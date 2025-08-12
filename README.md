@@ -29,40 +29,40 @@ Key columns include:
 4. Examine genre and rating distributions to understand audience targeting.  
 5. Create impactful visualisations using Python and prepare for Power BI dashboard development.  
 
-## Hypotheses and How I Tested Them
+## Hypotheses and how they were tested
 
-### Hypothesis 1: Content Added Over Time  
-*I believed the amount of new content added to Netflix changes over time, showing clear patterns by month and year.*  
+### Hypotheses and Findings
 
-**How I checked this:**  
-I looked at the dates when shows and movies were added, counted how many were added each month and year, then created line charts to spot trends — like seasonal peaks or steady growth over the years.
+This project explored four ideas (hypotheses) about Netflix’s content, which were then tested and validated using the dataset.
 
----
 
-### Hypothesis 2: Growth of Movies Compared to TV Shows  
-*I thought movies and TV shows have been added to Netflix at different rates over the years.*  
+### 1. Content Added Over Time  
+**Idea:** The amount of new content added to Netflix changes over time, showing patterns by month and year.  
+**Method:** The month and year each title was added were identified, and the number of titles added each month and year was counted. Charts were then created to highlight trends such as seasonal peaks or steady growth over time.
 
-**How I checked this:**  
-I separated the content into movies and TV shows, counted how many of each were added each year, and then compared their growth using line graphs. This helped me see which type grew faster.
 
----
+### 2. Growth of Movies vs TV Programmes  
+**Idea:** Movies and TV programmes have been added to Netflix at different rates over the years.  
+**Method:** Content was divided into movies and TV shows, with yearly counts for each category. These were compared using line charts to visualise differences in growth rates.
 
-### Hypothesis 3: Countries Contributing Most Content  
-*I expected that certain countries produce much more content on Netflix than others.*  
 
-**How I checked this:**  
-I counted how many shows and movies come from each country, then created interactive charts and maps to highlight the top contributing countries.
+### 3. Countries Adding the Most Content  
+**Idea:** Some countries contribute much more to Netflix’s library than others.  
+**Method:** The number of titles from each country was counted and visualised with bar charts and maps to show the countries with the largest contributions.
 
----
 
-### Hypothesis 4: Most Popular Genres on Netflix  
-*I believed some genres are much more common in the Netflix library than others.*  
-
-**How I checked this:**  
-I grouped shows and movies by genre, counted how many titles belong to each genre, and visualised the most popular genres with bar charts to see which ones dominate.
+### 4. Most Popular Genres on Netflix  
+**Idea:** Some genres are much more common in Netflix’s catalogue than others.  
+**Method:** Titles were grouped by genre, and the number in each category was counted. A bar chart was used to highlight the most frequently occurring genres.
 
 ## Project Plan
 *(To be updated once Power BI visualisation work is complete)*
+
+## Analysis technique used
+
+## Ethical considerations
+
+## Dashboard design
 
 ## Tools and Libraries
 - Python (Pandas, Matplotlib, Seaborn, Plotly)
