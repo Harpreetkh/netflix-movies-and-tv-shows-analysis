@@ -35,7 +35,6 @@ Key columns include:
 
 This project explored four ideas (hypotheses) about Netflix’s content, which were then tested and validated using the dataset.
 
-
 ### 1. Content Added Over Time  
 **Idea:** The amount of new content added to Netflix changes over time, showing patterns by month and year.  
 **Method:** The month and year each title was added were identified, and the number of titles added each month and year was counted. Charts were then created to highlight trends such as seasonal peaks or steady growth over time.
