@@ -84,4 +84,9 @@ The following techniques were applied to explore and understand the Netflix data
 - Analysis guided by Code Institute learning materials
 
 ## Acknowledgements
-Thanks to those who supported me during this project.
+Thanks to:
+- Code Institute for the project structure
+- Kaggle for providing the dataset
+- OPENAI for ChatGPT
+- GitHub Copilot for coding support
+- Code Institute peers for being supportive along the way
